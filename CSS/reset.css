@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* outline: 1px solid red; */
+}
+
+ul li {
+    list-style: none;
+}
+
+html, body {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+input, button {
+    outline: none;
+    border-style: none;
+}
