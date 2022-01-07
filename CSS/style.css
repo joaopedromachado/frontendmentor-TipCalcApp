@@ -15,11 +15,112 @@
 
 
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     background: var(--lgt-gr-cyan);
     font-family: 'Space Mono', monospace;
     font-weight: 700;
 }
 
+.logo {
+    
+}
+
 .content {
+    display: flex;
     background: var(--white);
+    /* width: calc(100% - 100px); */
+    padding: 25px;
+    border-radius: 1rem;
+}
+.user-head {
+    color: var(--color-drgr-cyan);
+    margin: 15px 0 15px 0;
+}
+.user-area-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 315px;
+}
+.dollar-logo, .person-logo {
+    display: flex;
+    align-items: center;
+}
+.tips-calculator {
+    display: flex;
+    justify-content: space-between;
+    background: var(--lgt-gr-cyan);
+    color: var(--color-vrdrk-cyan);
+    border-radius: 6px;
+    padding: 10px 10px;
+}
+
+.tips-select-user {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+}
+
+
+.content-tips {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 315px;
+    background: var(--color-vrdrk-cyan);
+    padding: 30px 25px;
+    margin-left: 25px;
+    border-radius: 1rem;
+}
+.content-total-user {
+    display: flex;
+    justify-content: space-between;
+}
+.txt-tip-total {
+    color: var(--white);
+}
+.person {
+    color: var(--darkgr-cyan);
+}
+.total-area-result {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-str-cyan);
+}
+.total-area-result h1 {
+    align-self: flex-end;
+    color: var(--color-str-cyan);
+}
+#reset {
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background: var(--color-str-cyan);
+    color: var(--color-vrdrk-cyan);
+    border-radius: 6px;
+    padding: 10px 0;
+}
+
+#customUser, #totalBill, #totalUser {
+    width: 50px;
+    padding: 5px;
+}
+.tip-style {
+    cursor: pointer;
+    width: 100%;
+    background-color: var(--color-vrdrk-cyan);
+    color: var(--white);
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 6px;
+}
+
+.active, .tip-active:hover {
+    background-color: var(--color-str-cyan);
+    color: var(--color-vrdrk-cyan);
 }
